@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <link rel="stylesheet icon" href="scorpio1.jpg">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <div id="head">
+        <h2>Online Quiz Test</h2>
+        <p id="time">Time : 59</p>
+    </div>
+    <div id="main">
+        <div id="qs" class="show">
+            <p>Click to start quiz you have 59 sec</p>
+            <button onclick="start()">Start</button>
+        </div>    
+        <div id="q1" class="hide">
+            <p>Question # 1 of 5<br>when was the first microsoft operating system introduced?</p>
+            <input type="radio" name="ans" value="1985">1985<br>
+            <input type="radio" name="ans" value="wrong">1986<br>
+            <input type="radio" name="ans" value="wrong">1988<br><br>
+            <input class="design" type="button" onclick="check()" value="submit">
+        </div>
+        <div id="q2" class="hide">
+            <p>Question # 2 of 5<br> which one is the first language of the world?</p>
+            <input type="radio" name="ans" value="wrong">arabi<br>
+            <input type="radio" name="ans" value="wrong">sanscerat<br>
+            <input type="radio" name="ans" value="abrani">abrani<br><br>
+            <input class="design" type="button" onclick="check()" value="submit">
+        </div>
+        <div id="q3" class="hide">
+            <p>Question # 3 of 5<br> Convert this binary(1101)<sub>2</sub> into decimal ?</p>
+            <input type="radio" name="ans" value="wrong">26<br>
+            <input type="radio" name="ans" value="wrong">7<br>
+            <input type="radio" name="ans" value="13">13<br><br>
+            <input class="design" type="button" onclick="check()" value="submit">
+        </div>
+        <div id="q4" class="hide">
+            <p>Question # 4 of 5<br> who is the first president of pakistan?</p>
+            <input type="radio" name="ans" value="wrong">nawaz shareef<br>
+            <input type="radio" name="ans" value="iskander mirza">iskander mirza<br>
+            <input type="radio" name="ans" value="wrong">bhutto<br><br>
+            <input class="design" type="button" onclick="check()" value="submit">
+        </div>
+        <div id="q5" class="hide">
+            <p>Question # 5 of 5<br>who is the first prime minister of pakistan ?</p>
+            <input type="radio" name="ans" value="wrong">quaid-e-Azam<br>
+            <input type="radio" name="ans" value="wrong">Bhutto<br>
+            <input type="radio" name="ans" value="Liaquat Ali Khan">Liaquat Ali Khan<br><br>
+            <input class="design" type="button" onclick="check()" value="submit">
+        </div>
+        <div id="q6" class="hide">
+            <p>Click the button to get the result</p>
+            <button onclick="result()">Result</button>
+         </div>
+          <p id="result"></p>
+          <p id="rep">0</p>
+    </div>
+</body>
+</html>
